@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flexGrow": 1,
+    }
+  }
+>
+  <RCTScrollView
+    contentInsetAdjustmentBehavior="automatic"
+    style={
+      Object {
+        "backgroundColor": "#fff",
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          Object {
+            "marginTop": 32,
+            "paddingBottom": 0,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 0,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#222",
+                "fontSize": 24,
+                "fontWeight": "600",
+              }
+            }
+          >
+            Dark Mode
+          </Text>
+          <RCTSwitch
+            accessibilityRole="switch"
+            onChange={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "height": 31,
+                "width": 51,
+              }
+            }
+            value={false}
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginTop": 32,
+            "paddingBottom": 0,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 24,
+              "fontWeight": "600",
+            }
+          }
+        >
+          Step One
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#666",
+              "fontSize": 18,
+              "fontWeight": "400",
+              "marginTop": 8,
+            }
+          }
+        >
+          Edit 
+          <Text
+            style={
+              Object {
+                "fontWeight": "700",
+              }
+            }
+          >
+            App.tsx
+          </Text>
+           to change this screen and then come back to see your edits.
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "marginTop": 32,
+            "paddingBottom": 0,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 24,
+              "fontWeight": "600",
+            }
+          }
+        >
+          See Your Changes
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#666",
+              "fontSize": 18,
+              "fontWeight": "400",
+              "marginTop": 8,
+            }
+          }
+        >
+          Press Cmd + R in the simulator to reload your app's code.
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "marginTop": 32,
+            "paddingBottom": 0,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 24,
+              "fontWeight": "600",
+            }
+          }
+        >
+          Debug
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#666",
+              "fontSize": 18,
+              "fontWeight": "400",
+              "marginTop": 8,
+            }
+          }
+        >
+          Press Cmd + D in the simulator or shake your device to open the React Native debug menu.
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "marginTop": 32,
+            "paddingBottom": 0,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#222",
+              "fontSize": 24,
+              "fontWeight": "600",
+            }
+          }
+        >
+          Learn More
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#666",
+              "fontSize": 18,
+              "fontWeight": "400",
+              "marginTop": 8,
+            }
+          }
+        >
+          Read the docs to discover what to do next.
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
