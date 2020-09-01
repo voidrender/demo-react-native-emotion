@@ -8,3 +8,7 @@ import renderer from 'react-test-renderer';
 it('renders correctly', () => {
     renderer.create(<App />);
 });
+
+it('matches snapshot', () => {
+    expect(renderer.create(<App />).toJSON()).toMatchSnapshot();
+});
