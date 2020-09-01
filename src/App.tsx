@@ -1,118 +1,103 @@
-import styled from '@emotion/native';
-import React from 'react';
-import {
-    SafeAreaView,
-    ScrollView,
-    StatusBar,
-    StyleSheet,
-    Text,
-    View,
-} from 'react-native';
-import {
-    Colors,
-    DebugInstructions,
-    Header,
-    LearnMoreLinks,
-    ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-declare const global: { HermesInternal: null | {} };
+import styled from 'emotion-native-extended';
+import { ThemeProvider } from 'emotion-theming';
+import React, { useState } from 'react';
+import { SafeAreaView, StatusBar, Switch } from 'react-native';
+import { darkTheme, lightTheme } from './themes';
 
 const App = () => {
+    const [theme, setTheme] = useState(lightTheme);
     return (
-        <>
-            <StatusBar barStyle="dark-content" />
-            <SafeAreaView>
-                <ScrollView
-                    contentInsetAdjustmentBehavior="automatic"
-                    style={styles.scrollView}>
-                    <Header />
-                    <ThemeButton
-                        title="Toggle Theme"
-                        onPress={() => console.log('TODO: Change theme')}
-                    />
-                    {global.HermesInternal == null ? null : (
-                        <View style={styles.engine}>
-                            <Text style={styles.footer}>Engine: Hermes</Text>
-                        </View>
-                    )}
-                    <View style={styles.body}>
-                        <View style={styles.sectionContainer}>
-                            <Text style={styles.sectionTitle}>Step One</Text>
-                            <Text style={styles.sectionDescription}>
-                                Edit{' '}
-                                <Text style={styles.highlight}>App.tsx</Text> to
-                                change this screen and then come back to see
-                                your edits.
-                            </Text>
-                        </View>
-                        <View style={styles.sectionContainer}>
-                            <Text style={styles.sectionTitle}>
-                                See Your Changes
-                            </Text>
-                            <Text style={styles.sectionDescription}>
-                                <ReloadInstructions />
-                            </Text>
-                        </View>
-                        <View style={styles.sectionContainer}>
-                            <Text style={styles.sectionTitle}>Debug</Text>
-                            <Text style={styles.sectionDescription}>
-                                <DebugInstructions />
-                            </Text>
-                        </View>
-                        <View style={styles.sectionContainer}>
-                            <Text style={styles.sectionTitle}>Learn More</Text>
-                            <Text style={styles.sectionDescription}>
-                                Read the docs to discover what to do next:
-                            </Text>
-                        </View>
-                        <LearnMoreLinks />
-                    </View>
+        <ThemeProvider theme={theme}>
+            <StatusBar
+                barStyle={
+                    theme.name === 'dark' ? 'light-content' : 'dark-content'
+                }
+            />
+            <SafeAreaContainer>
+                <ScrollView contentInsetAdjustmentBehavior="automatic">
+                    <SectionContainer>
+                        <ThemeSwitchContainer>
+                            <SectionTitle>Dark Mode</SectionTitle>
+                            <Switch
+                                value={theme.name === 'dark'}
+                                onValueChange={(value) => {
+                                    if (value) {
+                                        setTheme(darkTheme);
+                                    } else {
+                                        setTheme(lightTheme);
+                                    }
+                                }}
+                            />
+                        </ThemeSwitchContainer>
+                    </SectionContainer>
+                    <SectionContainer>
+                        <SectionTitle>Step One</SectionTitle>
+                        <SectionDescription>
+                            Edit <HighlightedText>App.tsx</HighlightedText> to
+                            change this screen and then come back to see your
+                            edits.
+                        </SectionDescription>
+                    </SectionContainer>
+                    <SectionContainer>
+                        <SectionTitle>See Your Changes</SectionTitle>
+                        <SectionDescription>
+                            Press Cmd + R in the simulator to reload your app's
+                            code.
+                        </SectionDescription>
+                    </SectionContainer>
+                    <SectionContainer>
+                        <SectionTitle>Debug</SectionTitle>
+                        <SectionDescription>
+                            Press Cmd + D in the simulator or shake your device
+                            to open the React Native debug menu.
+                        </SectionDescription>
+                    </SectionContainer>
+                    <SectionContainer>
+                        <SectionTitle>Learn More</SectionTitle>
+                        <SectionDescription>
+                            Read the docs to discover what to do next.
+                        </SectionDescription>
+                    </SectionContainer>
                 </ScrollView>
-            </SafeAreaView>
-        </>
+            </SafeAreaContainer>
+        </ThemeProvider>
     );
 };
 
-const ThemeButton = styled.Button``;
+const SafeAreaContainer = styled(SafeAreaView)`
+    background-color: ${(props) => props.theme.colors.background};
+    flex-grow: 1;
+`;
 
-const styles = StyleSheet.create({
-    scrollView: {
-        backgroundColor: Colors.lighter,
-    },
-    engine: {
-        position: 'absolute',
-        right: 0,
-    },
-    body: {
-        backgroundColor: Colors.white,
-    },
-    sectionContainer: {
-        marginTop: 32,
-        paddingHorizontal: 24,
-    },
-    sectionTitle: {
-        fontSize: 24,
-        fontWeight: '600',
-        color: Colors.black,
-    },
-    sectionDescription: {
-        marginTop: 8,
-        fontSize: 18,
-        fontWeight: '400',
-        color: Colors.dark,
-    },
-    highlight: {
-        fontWeight: '700',
-    },
-    footer: {
-        color: Colors.dark,
-        fontSize: 12,
-        fontWeight: '600',
-        padding: 4,
-        paddingRight: 12,
-        textAlign: 'right',
-    },
-});
+const ScrollView = styled.ScrollView`
+    background-color: ${(props) => props.theme.colors.background};
+`;
+
+const SectionContainer = styled.View`
+    margin-top: 32px;
+    padding: 0px 24px;
+`;
+
+const ThemeSwitchContainer = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+`;
+
+const SectionTitle = styled.Text`
+    font-size: 24px;
+    font-weight: 600;
+    color: ${(props) => props.theme.colors.titleFont};
+`;
+
+const SectionDescription = styled.Text`
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    color: ${(props) => props.theme.colors.descriptionFont};
+`;
+
+const HighlightedText = styled.Text`
+    font-weight: 700;
+`;
 
 export default App;
