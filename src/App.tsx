@@ -1,5 +1,5 @@
-import styled from 'emotion-native-extended';
-import { ThemeProvider } from 'emotion-theming';
+import styled from '@emotion/native';
+import { ThemeProvider } from '@emotion/react';
 import React, { useState } from 'react';
 import { SafeAreaView, StatusBar, Switch } from 'react-native';
 import { darkTheme, lightTheme } from './themes';
