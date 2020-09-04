@@ -17,6 +17,8 @@ jobs:
                   node-version: '${{ steps.nvm.outputs.NVMRC }}'
             - name: Install dependencies
               run: yarn
+            - name: Lint
+              run: yarn lint
             - name: Compile TypeScript
               run: yarn tsc
             - name: Test
