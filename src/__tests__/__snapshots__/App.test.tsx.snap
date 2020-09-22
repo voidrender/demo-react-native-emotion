@@ -4,47 +4,62 @@ exports[`matches snapshot 1`] = `
 <RCTSafeAreaView
   emulateUnlessSupported={true}
   style={
-    Object {
-      "backgroundColor": "#fff",
-      "flexGrow": 1,
-    }
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flexGrow": 1,
+      },
+      undefined,
+    ]
   }
 >
   <RCTScrollView
     contentInsetAdjustmentBehavior="automatic"
     style={
-      Object {
-        "backgroundColor": "#fff",
-      }
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+        },
+        undefined,
+      ]
     }
   >
     <View>
       <View
         style={
-          Object {
-            "marginTop": 32,
-            "paddingBottom": 0,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 0,
-          }
+          Array [
+            Object {
+              "marginTop": 32,
+              "paddingBottom": 0,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 0,
+            },
+            undefined,
+          ]
         }
       >
         <View
           style={
-            Object {
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-            }
+            Array [
+              Object {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
           }
         >
           <Text
             style={
-              Object {
-                "color": "#222",
-                "fontSize": 24,
-                "fontWeight": "600",
-              }
+              Array [
+                Object {
+                  "color": "#222",
+                  "fontSize": 24,
+                  "fontWeight": "600",
+                },
+                undefined,
+              ]
             }
           >
             Dark Mode
@@ -66,42 +81,54 @@ exports[`matches snapshot 1`] = `
       </View>
       <View
         style={
-          Object {
-            "marginTop": 32,
-            "paddingBottom": 0,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 0,
-          }
+          Array [
+            Object {
+              "marginTop": 32,
+              "paddingBottom": 0,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 0,
+            },
+            undefined,
+          ]
         }
       >
         <Text
           style={
-            Object {
-              "color": "#222",
-              "fontSize": 24,
-              "fontWeight": "600",
-            }
+            Array [
+              Object {
+                "color": "#222",
+                "fontSize": 24,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
           }
         >
           Step One
         </Text>
         <Text
           style={
-            Object {
-              "color": "#666",
-              "fontSize": 18,
-              "fontWeight": "400",
-              "marginTop": 8,
-            }
+            Array [
+              Object {
+                "color": "#666",
+                "fontSize": 18,
+                "fontWeight": "400",
+                "marginTop": 8,
+              },
+              undefined,
+            ]
           }
         >
           Edit 
           <Text
             style={
-              Object {
-                "fontWeight": "700",
-              }
+              Array [
+                Object {
+                  "fontWeight": "700",
+                },
+                undefined,
+              ]
             }
           >
             App.tsx
@@ -111,34 +138,43 @@ exports[`matches snapshot 1`] = `
       </View>
       <View
         style={
-          Object {
-            "marginTop": 32,
-            "paddingBottom": 0,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 0,
-          }
+          Array [
+            Object {
+              "marginTop": 32,
+              "paddingBottom": 0,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 0,
+            },
+            undefined,
+          ]
         }
       >
         <Text
           style={
-            Object {
-              "color": "#222",
-              "fontSize": 24,
-              "fontWeight": "600",
-            }
+            Array [
+              Object {
+                "color": "#222",
+                "fontSize": 24,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
           }
         >
           See Your Changes
         </Text>
         <Text
           style={
-            Object {
-              "color": "#666",
-              "fontSize": 18,
-              "fontWeight": "400",
-              "marginTop": 8,
-            }
+            Array [
+              Object {
+                "color": "#666",
+                "fontSize": 18,
+                "fontWeight": "400",
+                "marginTop": 8,
+              },
+              undefined,
+            ]
           }
         >
           Press Cmd + R in the simulator to reload your app's code.
@@ -146,34 +182,43 @@ exports[`matches snapshot 1`] = `
       </View>
       <View
         style={
-          Object {
-            "marginTop": 32,
-            "paddingBottom": 0,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 0,
-          }
+          Array [
+            Object {
+              "marginTop": 32,
+              "paddingBottom": 0,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 0,
+            },
+            undefined,
+          ]
         }
       >
         <Text
           style={
-            Object {
-              "color": "#222",
-              "fontSize": 24,
-              "fontWeight": "600",
-            }
+            Array [
+              Object {
+                "color": "#222",
+                "fontSize": 24,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
           }
         >
           Debug
         </Text>
         <Text
           style={
-            Object {
-              "color": "#666",
-              "fontSize": 18,
-              "fontWeight": "400",
-              "marginTop": 8,
-            }
+            Array [
+              Object {
+                "color": "#666",
+                "fontSize": 18,
+                "fontWeight": "400",
+                "marginTop": 8,
+              },
+              undefined,
+            ]
           }
         >
           Press Cmd + D in the simulator or shake your device to open the React Native debug menu.
@@ -181,34 +226,43 @@ exports[`matches snapshot 1`] = `
       </View>
       <View
         style={
-          Object {
-            "marginTop": 32,
-            "paddingBottom": 0,
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "paddingTop": 0,
-          }
+          Array [
+            Object {
+              "marginTop": 32,
+              "paddingBottom": 0,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 0,
+            },
+            undefined,
+          ]
         }
       >
         <Text
           style={
-            Object {
-              "color": "#222",
-              "fontSize": 24,
-              "fontWeight": "600",
-            }
+            Array [
+              Object {
+                "color": "#222",
+                "fontSize": 24,
+                "fontWeight": "600",
+              },
+              undefined,
+            ]
           }
         >
           Learn More
         </Text>
         <Text
           style={
-            Object {
-              "color": "#666",
-              "fontSize": 18,
-              "fontWeight": "400",
-              "marginTop": 8,
-            }
+            Array [
+              Object {
+                "color": "#666",
+                "fontSize": 18,
+                "fontWeight": "400",
+                "marginTop": 8,
+              },
+              undefined,
+            ]
           }
         >
           Read the docs to discover what to do next.
