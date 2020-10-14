@@ -18,7 +18,7 @@
   "dependencies": {
     "@emotion/native": "11.0.0-rc.0",
     "@emotion/react": "11.0.0-rc.0",
-    "react": "16.13.1",
+    "react": "16.14.0",
     "react-native": "0.63.3"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "jest": "26.5.3",
     "metro-react-native-babel-preset": "0.63.0",
     "prettier": "2.1.2",
-    "react-test-renderer": "16.13.1",
+    "react-test-renderer": "16.14.0",
     "typescript": "4.0.3"
   },
   "jest": {
