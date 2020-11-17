@@ -932,10 +932,10 @@
   dependencies:
     css-to-react-native "^3.0.0"
 
-"@emotion/react@11.0.0":
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.0.0.tgz#6b39b5bb5e2d48d720a420ff885a95ff268dae0d"
-  integrity sha512-mMQOuJcCVHUHUKZMamCbNnuUEgEff1W1JL3/1jGXFN52Ik5R/2ccVb3FherYFkSJkkjkPC3dUfFSeisXVh9Spg==
+"@emotion/react@11.1.0":
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.1.0.tgz#3aa7df07ccab2186dbe676fcd9ba2305be0cf0c0"
+  integrity sha512-lMC1oBg+wOFt6LTRJYM7JFwo0AY/2xCb1uTVLoXCEtVZFaGZiuPcfJYty9WNoLJN1i9JQv/GyNndZ6zBKI2xoA==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@emotion/cache" "^11.0.0"
