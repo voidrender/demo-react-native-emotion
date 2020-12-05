@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@emotion/native": "11.0.0",
-    "@emotion/react": "11.1.1",
+    "@emotion/react": "11.1.2",
     "react": "16.14.0",
     "react-native": "0.63.4"
   },
