@@ -1,5 +1,7 @@
 # demo-react-native-emotion
 
+> **This project has been archived**. It was very useful as emotion was moving from v10 to v11, but now that we're done with that big transition it is less useful to keep this up to date.
+
 A place to try out 👩‍🎤emotion in a React Native project.
 
 ## Getting Started
